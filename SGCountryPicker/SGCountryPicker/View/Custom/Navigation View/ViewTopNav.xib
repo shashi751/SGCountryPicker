@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewTopNav" customModule="Storygeny" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="VcN-Iw-wTT" id="I7P-F2-HHv"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="4q8-Me-Gmf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQF-4b-K8P">
+                    <rect key="frame" x="20" y="15.5" width="34" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" systemColor="systemGray5Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-Hk-pno">
+                    <rect key="frame" x="32.5" y="24.5" width="9" height="16"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TbQ-Hk-pno" secondAttribute="height" multiplier="9:16" id="8h4-H6-z0S"/>
+                        <constraint firstAttribute="width" constant="9" id="Rvt-Ro-tBy"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-Iw-wTT">
+                    <rect key="frame" x="20" y="15.5" width="34" height="34"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="4w7-Zz-sCP"/>
+                        <constraint firstAttribute="width" secondItem="VcN-Iw-wTT" secondAttribute="height" multiplier="1:1" id="n5V-ns-I94"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="mHK-JU-fgF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TbQ-Hk-pno" firstAttribute="centerX" secondItem="VcN-Iw-wTT" secondAttribute="centerX" id="HDj-fW-hLo"/>
+                <constraint firstItem="BQF-4b-K8P" firstAttribute="trailing" secondItem="VcN-Iw-wTT" secondAttribute="trailing" id="QRd-7e-j1J"/>
+                <constraint firstItem="BQF-4b-K8P" firstAttribute="top" secondItem="VcN-Iw-wTT" secondAttribute="top" id="RHh-Dj-UW1"/>
+                <constraint firstItem="TbQ-Hk-pno" firstAttribute="centerY" secondItem="VcN-Iw-wTT" secondAttribute="centerY" id="Yr5-bj-D8I"/>
+                <constraint firstItem="BQF-4b-K8P" firstAttribute="leading" secondItem="VcN-Iw-wTT" secondAttribute="leading" id="biB-CE-pJr"/>
+                <constraint firstItem="VcN-Iw-wTT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mYo-fe-YQm"/>
+                <constraint firstItem="VcN-Iw-wTT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="rfO-jq-Vkz"/>
+                <constraint firstItem="BQF-4b-K8P" firstAttribute="bottom" secondItem="VcN-Iw-wTT" secondAttribute="bottom" id="vvq-T4-twh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-194.53125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow" width="9" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
